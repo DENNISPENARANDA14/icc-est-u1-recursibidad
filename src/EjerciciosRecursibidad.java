@@ -48,5 +48,50 @@ public class EjerciciosRecursibidad {
                 return resultado;
             }
     }
+    /*
+     * escriba un metodo recursivo que imprima los numeros desde n hasta 1
+     * de forma descendente, separados por un espacio
+     */
+    public void imprimirDescendente(int n){
+        if (n == 1) {
+            System.out.println(n);
+            return;
+        }
+        System.out.print(n+" ");
+        imprimirDescendente(n-1);
+    }
+
+    /*
+     * crea una funcion recursiva llamada reverso que resiva un numero entero positivo n y devuelva su numero invertido.
+     * por ejemplo, si se escribe 1234, la funcion debe devolver 4321.
+     */
+   
+    public int reverso(int n){
+        int res = 0;
+        return invertirNumero2(n, res);
+                
+    }
+    private int invertirNumero(int numero, int res){
+        if(numero == 0){
+            return res;
+        }else{
+            int residuo = numero%10;
+            numero = numero/10;
+            res = (res*10)+residuo;
+            return invertirNumero(numero, res);
+        }
+    }
+    private int invertirNumero2(int numero, int res){
+        int r;
+        if(numero == 0){
+            r = res;
+        }else{
+            int residuo = numero%10;
+            numero = numero/10;
+            res = (res*10)+residuo;
+            r = invertirNumero2(numero, res);
+        }
+        return r;
+    }
     
 }

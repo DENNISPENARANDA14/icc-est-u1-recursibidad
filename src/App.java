@@ -23,6 +23,13 @@ public class App {
         int res3= er.sumaDigitos(3453);
         System.out.println("la suma de los digitos = "+res3);
 
+        er.imprimirDescendente(8);
+
+        int n1=564;
+        int res4= er.reverso(n1);
+        System.out.println("el reverso de " +n1+ " es: "+res4);
+
+
 
     }
     public static int factorial(int n){
