@@ -21,7 +21,7 @@ public class App {
         System.out.println("La potencia es: "+base+" ^ "+exponente+" ="+re2);
 
         int res3= er.sumaDigitos(3453);
-        System.out.println("suma = "+res3);
+        System.out.println("la suma de los digitos = "+res3);
 
 
     }
