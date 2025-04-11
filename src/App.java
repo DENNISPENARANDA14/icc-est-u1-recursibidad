@@ -1,4 +1,3 @@
-import java.nio.channels.Pipe.SourceChannel;
 
 public class App {
     public static void main(String[] args) throws Exception {
@@ -11,9 +10,18 @@ public class App {
         
 
         int res= er.fibonacci(5);
-        System.out.println("Respuesta es: "+res);
+        System.out.println("Respuesta fibonacci es: "+res);
+        
         int res1=er.SumaConsecutivos(5);
-        System.out.println("la suma es: "+res1);
+        System.out.println("la suma consecutiva es: "+res1);
+        
+        int base=8;
+        int exponente=6;
+        int re2 = er.getPotencia(base, exponente);
+        System.out.println("La potencia es: "+base+" ^ "+exponente+" ="+re2);
+
+        int res3= er.sumaDigitos(3453);
+        System.out.println("suma = "+res3);
 
 
     }
